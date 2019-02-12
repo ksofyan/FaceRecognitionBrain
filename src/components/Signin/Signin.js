@@ -37,7 +37,7 @@ class Signin extends React.Component {
 				})
 		}
 
-class Input extends React.Component {
+class input extends React.Component {
   		_handleKeyPress(e) {
     		if (e.key === 'Enter') {
       		console.log('do validate');
