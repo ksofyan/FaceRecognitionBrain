@@ -37,12 +37,11 @@ class Signin extends React.Component {
 				})
 		}
 
-class input extends React.Component {
-  		_handleKeyPress(e) {
-    		if (e.key === 'Enter') {
-      		console.log('do validate');
-    			}
-  			}
+
+handleKeyUp(event) {
+  if (event.keyCode == 13) 
+  	return this.sendData()
+}
 
 	render() {
 		const {onRouteChange} = this.props;
@@ -74,7 +73,7 @@ class input extends React.Component {
 			    <div className="">
 			      <input 
 			      onClick = {this.onSubmitSignIn}
-			      onKeyPress={this._handleKeyPress}
+			      onKeyUp={this.handleKeyUp}
 			      className ="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" 
 			      type ="submit" 
 			      value ="Sign in" />
