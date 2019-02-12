@@ -26,7 +26,7 @@ const initialState = {
       input: '',
       imageUrl: '',
       box: {},
-      route: 'signin',
+      route: 'signin', //--> //check if this is right 
       isSignedIn: false,
       user: {
               id: '',
@@ -144,7 +144,7 @@ class App extends Component {
               <FaceRecognition box={box} imageUrl={imageUrl} />
             </div>
           : (
-             route === 'Signin'
+             route === 'signin'
              ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
              : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
             )

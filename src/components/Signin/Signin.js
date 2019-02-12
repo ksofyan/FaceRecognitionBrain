@@ -21,15 +21,14 @@ class Signin extends React.Component {
 		onSubmitSignIn = () => {
 			fetch('https://warm-thicket-16897.herokuapp.com/signin', {
 				method: 'post',
-				headers: {'Content-type': 'application/json'},
+				headers: {'Content-Type': 'application/json'},
 				body: JSON.stringify({
 					email: this.state.signInEmail,
 					password: this.state.signInPassword
 				})
 			})
-			.then(response => response.json())
-
-				.then(user => {
+			.then(response => response.JSON())
+			.then(user => {
 					if (user.id) {
 						this.props.loadUser(user);
 						this.props.onRouteChange('home');
