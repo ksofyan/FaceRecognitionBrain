@@ -132,7 +132,7 @@ calculateFaceLocation = (data) => {
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
         { route === 'home'
           ? <div>
-              <Logo />
+  
               <Rank
                 name={this.state.user.name}
                 entries={this.state.user.entries}

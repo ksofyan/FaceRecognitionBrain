@@ -39,7 +39,7 @@ class Signin extends React.Component {
 
 
 handleKeyUp(event) {
-  if (event.keyCode == 13) 
+  if (event.keyCode === 13) 
   	return this.sendData()
 }
 
