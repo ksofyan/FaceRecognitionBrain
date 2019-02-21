@@ -1,24 +1,22 @@
-/*.navbar{
-	display:flex;
-	justify-content: space-between;
-	flex-flow: row nowrap;
-
-} 
-*/
-
-
-.Logo
-{
-position:fixed;
-top:2%;
-left:2%
-......
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
 }
 
-.p
-{
-position:fixed;
-top:2%;
-right:2%
-......
+.cf:after {
+    clear: both;
+}
+
+.fl{
+	display: flex;
+    justify-content: flex-end;
+}
+
+.p{
+	text-align:right;
+}
+
+
+.w-50 {
+    width: 100%;
 }
