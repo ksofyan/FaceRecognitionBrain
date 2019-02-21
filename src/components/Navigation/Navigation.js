@@ -8,10 +8,13 @@ const Navigation = ({onRouteChange, isSignedIn}) => {
 						<div className='fl w-50'>
 							<Logo />
 						</div>
-						<p
-						onClick = {()=> onRouteChange('signout')}
-						className = 'fl w-50 f3 link dim white underline pa3 pointer'> Sign Out
-						</p>
+						<nav style ={{display:'flex', justifyContent:'flex-end'}}>
+							<p
+							style= {{textAlign:'right'}}
+							onClick = {()=> onRouteChange('signout')}
+							className = 'fl w-50 f3 link dim white underline pa3 pointer'> Sign Out
+							</p>
+						</nav>
 			    </div>
 
 			);

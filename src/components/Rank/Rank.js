@@ -5,7 +5,7 @@ const Rank = ({name, entries}) => {
 
 	return (
 			<div>
-				<div className='white f2'>
+				<div className='white f2 mt6'>
 				 {`${name}, your current entry count is...`}
 				</div>
 				<div className='white f1'>

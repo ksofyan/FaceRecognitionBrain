@@ -7,16 +7,17 @@
     clear: both;
 }
 
+
 .fl{
 	display: flex;
     justify-content: flex-end;
 }
 
 .p{
-	text-align:right;
+	text-align: right;
 }
-
 
 .w-50 {
     width: 100%;
 }
+
