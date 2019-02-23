@@ -88,14 +88,14 @@ calculateFaceLocation = (data) => {
             method: 'post',
             headers: {'Content-type': 'application/json'},
             body: JSON.stringify({
-            input: this.state.user.input
+            input: this.state.input
             })
           })
       .then(response => response.json())
       .then(response => {
         if (response) {
           fetch('https://warm-thicket-16897.herokuapp.com/image', {
-                  method: 'post',
+                  method: 'put',
                   headers: {'Content-type': 'application/json'},
                   body: JSON.stringify({
                   id: this.state.user.id
